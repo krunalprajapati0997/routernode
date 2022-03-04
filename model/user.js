@@ -6,7 +6,7 @@ const userSchema=new mongoose.Schema({
     mobile : { type: String, required: true },
     address : { type: String },
     // password : { type: String, required: true },
-    // profile_file: { type: String, required: true},
-    // profile_path: { type: String }
+    profile_file: { type: String, required: true},
+    profile_path: { type: String }
 })
 module.exports=mongoose.model("User",userSchema);
